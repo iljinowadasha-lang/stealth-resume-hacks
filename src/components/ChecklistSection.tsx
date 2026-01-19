@@ -12,24 +12,16 @@ const ChecklistSection = () => {
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set());
 
   const checklistItems: ChecklistItem[] = [
-    // Формат
-    { id: "1", text: "Формат PDF (не Word!)", category: "format" },
-    { id: "2", text: "Один столбец, без таблиц и колонок", category: "format" },
-    { id: "3", text: "Стандартный шрифт (Arial, Calibri, Inter)", category: "format" },
-    { id: "4", text: "Контакты в начале документа, не в хедере", category: "format" },
-    { id: "5", text: "Нет картинок и иконок", category: "format" },
     // Контент
-    { id: "6", text: "Professional Summary вместо Objective", category: "content" },
-    { id: "7", text: "Обратно-хронологический порядок опыта", category: "content" },
-    { id: "8", text: "Каждое достижение с метрикой (%, $, люди)", category: "content" },
-    { id: "9", text: "Ключевые слова из вакансии в тексте", category: "content" },
-    { id: "10", text: "Названия методологий: Agile, Scrum, Waterfall", category: "content" },
-    { id: "11", text: "Инструменты: Jira, Confluence, etc.", category: "content" },
+    { id: "1", text: "Professional Summary с ключевыми словами", category: "content" },
+    { id: "2", text: "Обратно-хронологический порядок опыта", category: "content" },
+    { id: "3", text: "Достижения с цифрами и метриками", category: "content" },
+    { id: "4", text: "Указаны методологии и инструменты", category: "content" },
+    { id: "5", text: "Управленческие и технические навыки", category: "content" },
     // Финальные проверки
-    { id: "12", text: "Нет опечаток и грамматических ошибок", category: "final" },
-    { id: "13", text: "Адаптировано под конкретную вакансию", category: "final" },
-    { id: "14", text: "Размер: 1-2 страницы максимум", category: "final" },
-    { id: "15", text: "Попросил кого-то прочитать и проверить", category: "final" },
+    { id: "6", text: "Нет опечаток и грамматических ошибок", category: "final" },
+    { id: "7", text: "Минимум 1–2 страницы", category: "final" },
+    { id: "8", text: "Адаптировано под конкретную вакансию", category: "final" },
   ];
 
   const toggleItem = (id: string) => {
@@ -46,7 +38,6 @@ const ChecklistSection = () => {
   const isComplete = checkedItems.size === checklistItems.length;
 
   const categoryLabels: Record<string, string> = {
-    format: "📄 Формат",
     content: "✍️ Контент",
     final: "✅ Финальные проверки",
   };
@@ -63,9 +54,9 @@ const ChecklistSection = () => {
     <section id="checklist" className="pm-section">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <span className="pm-badge mb-4">✓ Чек-лист</span>
+          <span className="pm-badge mb-4">📄 Чек-лист</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-4">
-            Проверь себя перед отправкой
+            Чек-лист для резюме
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Пройдись по списку и убедись, что ничего не забыл. 
@@ -120,23 +111,23 @@ const ChecklistSection = () => {
             {isComplete ? (
               <div className="pm-card text-center">
                 <div className="pm-meme mb-4">
-                  <img src={memeSuccess} alt="Success cat" className="w-full" />
+                  <img src={memeSuccess} alt="Успех" className="w-full" />
                 </div>
                 <div className="flex items-center justify-center gap-2 text-success font-bold text-xl mb-2">
                   <Check className="w-6 h-6" /> 🎉
-                  Ты готов!
+                  Резюме готово к отправке!
                 </div>
                 <p className="text-muted-foreground">
-                  Все пункты отмечены. Резюме готово к отправке! 🚀
+                  Все пункты отмечены. Удачи! 🚀
                 </p>
               </div>
             ) : (
               <div className="pm-card">
                 <div className="pm-meme mb-4">
-                  <img src={memeSuccess} alt="Success cat" className="w-full opacity-50" />
+                  <img src={memeSuccess} alt="Успех" className="w-full opacity-50" />
                 </div>
                 <p className="text-center text-muted-foreground">
-                  Отметь все пункты, чтобы увидеть котика успеха 😺
+                  Отметь все пункты, чтобы увидеть результат 😺
                 </p>
               </div>
             )}
