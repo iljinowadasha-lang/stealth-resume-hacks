@@ -47,6 +47,21 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        pm: {
+          blue: "hsl(var(--pm-blue))",
+          "blue-light": "hsl(var(--pm-blue-light))",
+          "blue-dark": "hsl(var(--pm-blue-dark))",
+          navy: "hsl(var(--pm-navy))",
+          gray: "hsl(var(--pm-gray))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +72,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
