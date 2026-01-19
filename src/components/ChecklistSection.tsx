@@ -123,7 +123,7 @@ const ChecklistSection = () => {
                   <img src={memeSuccess} alt="Success cat" className="w-full" />
                 </div>
                 <div className="flex items-center justify-center gap-2 text-success font-bold text-xl mb-2">
-                  <Check className="w-6 h-6" />
+                  <Check className="w-6 h-6" /> 🎉
                   Ты готов!
                 </div>
                 <p className="text-muted-foreground">

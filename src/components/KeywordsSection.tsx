@@ -63,9 +63,9 @@ const KeywordsSection = () => {
 
           <div className="sticky top-8">
             <div className="pm-meme">
-              <img src={memeKeywords} alt="Detective cat looking for keywords" className="w-full" />
+              <img src={memeKeywords} alt="Roll Safe meme" className="w-full" />
               <div className="bg-card p-3 text-center text-sm text-muted-foreground">
-                Рекрутер ищет ключевые слова в твоём резюме
+                Не откажут по ключевым словам, если скопировать их из вакансии
               </div>
             </div>
             
