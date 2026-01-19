@@ -50,18 +50,18 @@ const ATSSection = () => {
           </div>
           
           <div className="pm-meme">
-            <img src={memeRejected} alt="Rejected cat meme" className="w-full" />
+            <img src={memeRejected} alt="This is fine meme" className="w-full" />
             <div className="bg-card p-3 text-center text-sm text-muted-foreground">
-              Когда использовал "инициативный лидер" вместо "Project Manager"
+              Когда ATS отклонил резюме через 0.3 секунды
             </div>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="pm-meme order-2 md:order-1">
-            <img src={memeAts} alt="ATS robot meme" className="w-full" />
+            <img src={memeAts} alt="One does not simply meme" className="w-full" />
             <div className="bg-card p-3 text-center text-sm text-muted-foreground">
-              ATS сканирует твоё резюме за 6 секунд
+              Нельзя просто так взять и пройти ATS-фильтр
             </div>
           </div>
           
