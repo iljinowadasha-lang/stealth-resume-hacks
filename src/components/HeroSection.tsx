@@ -18,11 +18,10 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 leading-tight">
               Как составить резюме,
               <br />
-              <span className="opacity-90">которое не съест ATS</span>
+              <span className="opacity-90">которое пройдёт фильтр HH и HR</span>
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8 max-w-xl">
-              Советы, лайфхаки и чек-лист для проджект-менеджеров. 
-              Без воды, с мемами и конкретными примерами.
+              Ключевые слова, навыки, чек-лист и формула достижений для проджект-менеджеров на российском рынке.
             </p>
             <a 
               href="#checklist" 
